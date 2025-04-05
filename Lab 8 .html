@@ -1,24 +1,29 @@
 <!DOCTYPE html>
     <html lang = "en">
         <head>
-            
-    <meta charset="UTE-8">
+          <link rel="stylesheet" href="./lab.8.css/lab8.css">
+             <meta charset="UTE-8">
              </meta name= "viewport" content= "width-device-width, initial=scale=1.0">
         <title> Poker-Codingscape</title>
         </head>
-        <body>
-             <div> "class"=dice
+        <body id="PokerFace"> 
+<div class="style:">
        <h2 class="dice-title">Dice Game using HTML, CSS & Javascript</h2>
       <div class= "row">
-    <div class="col-6">
     <h3> Player 1</h3>
-    <img src="img/Dice-1.png" alt="dice" class= "img.dice">
- </div>
+    <button onclick="diceRoll(6)"> Roll Dice
+      </button>
+   <img src="img/Dice-1.png" alt="dice" class= "img.dice">
+   <h1 id="Resultsfromrollingdicegame">ResultsPending</h1>
+ </div> "class"=dice
  <script>
   function diceRoll(a) {
-    let sum = Math.floor(Math.random(1 - 6) * a) + 1;
-    document.getElementById("11").innerHTML = sum;
+    let sum = Math.floor(Math.random() * a) + 1;
+    document.getElementById("Resultsfromrollingdicegame").innerHTML = sum;
+    console.log("Show two dice rolling") 
+    //return number * number;
   } 
+  
   </script>
 </body>
     </html>
